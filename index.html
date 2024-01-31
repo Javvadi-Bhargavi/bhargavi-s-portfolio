@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bhargavi-Portfolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">Bhargavi</span>Portfolio</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#qualification" class="nav-item nav-link">Education</a>
+                <a href="#skill" class="nav-item nav-link">Skills</a>
+                <a href="#service" class="nav-item nav-link">Projects</a>
+                <a href="#portfolio" class="nav-item nav-link">Gallery</a>
+                <a href="#blog" class="nav-item nav-link">Internships</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="#contact" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/ai-girl.png" alt="">
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #fcf7f7;">Bhargavi Javvadi</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Aspiring Full Stack Web Developer</div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="https://drive.google.com/file/d/1iuw-0AdBknySXrb7daBsWAL_JQ_tSjsR/view?usp=drivesdk" class="btn btn-outline-light mr-5">Download CV</a>
+
+                        <button type="button" class="btn-play">
+                           
+                            &#9658; 
+                        </button>
+                        
+                        <script>
+                        document.querySelector('.btn-play').addEventListener('click', function() {
+                            var videoURL = 'img/video resumee.mp4'; // Replace with your video URL
+                            var newWindow = window.open(videoURL, '_blank');
+                            newWindow.focus();
+                        
+                            var closeBtn = newWindow.document.createElement('span');
+                            closeBtn.innerHTML = '&#10006;';
+                            closeBtn.classList.add('close-btn');
+                            newWindow.document.body.appendChild(closeBtn);
+                        
+                            closeBtn.addEventListener('click', function() {
+                                newWindow.close();
+                            });
+                        });
+                        </script>
+
+
+                      <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Play Video</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+   
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #e1a6c2;">About</h1>
+                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img src="img/bhj.jpg" alt="" style="width: 300px; height: 400px;">
+
+
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Myself Bhargavi Javvadi</h3>
+                    <p>Seeking a challenging position to contribute to positive change.Eager to apply my skills and deliver impact results into dynamic environment.</p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Javvadi Bhargavi</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Date of Birth: <span class="text-secondary">2nd Oct 2003</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Bachelor of Technology(B-TECH)</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">Fresher</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">9522237999</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">bhargavijavvadi02@gmail.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">K.P Palem,Mogaltur Mandal,West Godavari District,Andhra Pradesh</span></h6></div>
+                        
+                    </div>
+                    <a href="https://drive.google.com/file/d/1iuw-0AdBknySXrb7daBsWAL_JQ_tSjsR/view?usp=drivesdk" class="btn btn-outline-primary mr-4">View Resume</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #e1a6c2;">Education</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Education</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Education</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Bachelor of Technology(B-TECH)</h5>
+                            <p class="mb-2"><strong>Sagi Rama Krishnam Raju Engineering College(Bhimavaram)</strong> |<small>2021 - 2025</small></p>
+                        <p>Computer Science and Design(CSD)<br> CGPA:9.0</p>   
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Intermediate</h5>
+                            <p class="mb-2"><strong>Aditya junior College(Narsapur)</strong> | <small>2019 - 2021</small></p>
+                        <p>MPC<br>Percentage:96.1%</p>   
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">10th Standard</h5>
+                            <p class="mb-2"><strong>Sri Chaitanya Techno School(Narsapur)</strong> | <small>2018 - 2019</small></p>
+                        <p> SSC <br> GRADE:10</p>    
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Qualification End -->
+
+
+    <!-- Skill Start -->
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #e1a6c2;">Skills</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">C Programming</h6>
+                            <h6 class="font-weight-bold">80%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Java Programming</h6>
+                            <h6 class="font-weight-bold">75%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">HTML</h6>
+                            <h6 class="font-weight-bold">83%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Javascript</h6>
+                            <h6 class="font-weight-bold">60%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">CSS</h6>
+                            <h6 class="font-weight-bold">85%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">PHP</h6>
+                            <h6 class="font-weight-bold">60%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">MYSQL</h6>
+                            <h6 class="font-weight-bold">70%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-pink" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skill End -->
+
+
+    <!-- Services Start -->
+    <div class="container-fluid pt-5" id="service">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #e1a6c2;">Projects</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Projects</h1>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+
+
+    <div class="image-row">
+        <h2 class="row-heading">Design Thinking</h2>
+        <img src="img/design-thinking.webp" alt="Image 1">
+        <div class="description">
+          <p>"By embracing design thinking principles, our focus shifted towards enhancing the efficiency and security measures for our college watchmen. This transformative
+             approach resulted in a streamlined and user-centric methodology, ultimately revolutionizing the way security measures were handled. The implementation of these principles not only addressed existing challenges but also had a profound positive impact on the overall safety and functionality of our campus. It led to a more cohesive and responsive security system, ensuring a safer and more conducive environment for everyone within the college premises."</p>
+        </div>
+        <a class="btn btn-sm btn-outline-primary py-2" href="https://in.docworkspace.com/d/sID21xIXbAaaFhKoG">View</a>
+      </div>
+      
+      <div class="image-row">
+        <h2 class="row-heading">Web Development</h2>
+        <img src="img/web.jpg" alt="Image 2">
+        <div class="description">
+          <p>"Our department's evolution took a significant stride forward with the design and deployment of our dynamic website. This milestone not only amplified our online presence but also streamlined our day-to-day operations, providing a centralized platform for our initiatives. The website stands as a testament to our department's endeavors, offering visitors an engaging and informative experience. It serves as a window into our efforts, showcasing our initiatives, and embodying our commitment to transparency and accessibility. This digital gateway has become an integral tool, fostering connections and facilitating a deeper understanding of our department's work."</p>
+        </div>
+        <a class="btn btn-sm btn-outline-primary py-2" href="https://bhargavi-javvadi.github.io/csdwebsite/">View</a>
+      </div>
+      
+      <div class="image-row">
+        <h2 class="row-heading">Document Translator</h2>
+        <img src="img/doc2.jpg" alt="Image 3">
+        <div class="description">
+          <p>"Our team's pioneering efforts have resulted in the creation of an advanced document translation solution, marking a significant milestone in breaking language barriers. This groundbreaking solution boasts a remarkable 98 percent accuracy rate in translating documents into various languages, revolutionizing cross-language communication. Its versatility extends to supporting multiple document formats, ensuring seamless integration into various workflows. Beyond translation, the solution goes a step further by summarizing content within documents, offering concise insights. Moreover, its innovative feature supporting spoken content makes information accessible even to those who are illiterate, fostering inclusivity and expanding accessibility to valuable knowledge and resources."</p>
+        </div>
+        <a class="btn btn-sm btn-outline-primary py-2" href="https://doc-translate.vercel.app/">View</a>
+      </div>
+      
+
+
+
+    <!-- Portfolio Start -->
+    <div class="container-fluid pt-5 pb-3" id="portfolio">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #e1a6c2;">Gallery</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">All</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Design Thinking</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Web Development</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Document Translator</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/design1.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/design1.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/web1.png" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/web1.png" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/doc2.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/hack cert.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/design2.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/design2.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/web2.png" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/web2.png" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/sih team.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/sih team.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio End -->
+
+
+   
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid pt-5" id="blog">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #e1a6c2;">Internships</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Internships</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/oas.jpg" alt="">
+                       
+                    </div>
+                    <h5 class="font-weight-medium mb-4">UI/UX Internship-Purplelane</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="https://drive.google.com/file/d/12-clTiExIYhDxBBGpOlu1gQ75N-y3dUP/view?usp=drivesdk">View Certificate</a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/digistark.png" alt="">
+                        
+                    </div><br><br><br><br><br><br><br><br>
+                    <h5 class="font-weight-medium mb-4">Digital Marketing Internship-Digistark</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="https://drive.google.com/file/d/129txPzGW4GPLXaLHLy2sxMCIXwcK-qxL/view?usp=drivesdk">View Certificate</a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/oasis.jpeg" alt="" height="10px" width="10px">
+                        
+                    </div>
+                    <h5 class="font-weight-medium mb-4">Web Development-Oasis Infobyte</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="https://drive.google.com/file/d/11xk7BrA7AN5LqkKPQ5-D-dakYSMnXpJz/view?usp=drivesdk">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+
+    <!-- Contact Start -->
+<!-- Contact Start -->
+<!-- Contact Start -->
+<div class="container-fluid py-5" id="contact" style="background-image: url('https://ramantivirus.com/wp-content/uploads/2019/05/contact-background-images-2.png');">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #fbf6f8;">Contact</h1>
+            <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
+        </div>
+
+        <!-- FEEDBACK -->
+        <div class="feedbox">
+            <div class="feed">
+                <form action="mailto:bhargavijavvadi02@gmail.com" method="post" enctype="text/plain">
+                    <label for="name" style="text-align: center; display: block; font-weight: bold;">Your Name</label>
+                    <input type="text" id="name" name="name" class="fname" required="required" style="width: 500px; margin: 0 auto; display: block;"><br>
+                    <label for="email" style="text-align: center; display: block; font-weight: bold;">Email</label>
+                    <input type="email" id="email" name="mail" required="required" style="width: 500px; margin: 0 auto; display: block;"><br>
+                    <label for="additional" style="text-align: center; display: block; font-weight: bold;">Message</label>
+                    <textarea id="additional" name="additional" style="width: 500px; height: 150px; margin: 0 auto; display: block;"></textarea><br>
+                    <button type="send" id="csubmit" style="background-color: #0BCEAF; color: white; border: none; padding: 10px 20px; border-radius: 5px; display: block; margin: 0 auto; cursor: pointer;">Send </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="bhargavijavvadi02@gmail.com"><i class="fas fa-envelope"></i></a>
+
+                <a class="btn btn-light btn-social mr-2" href="https://www.facebook.com/profile.php?id=100094082933685"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/bhargavi-javvadi-1570b8285/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social" href="https://www.instagram.com/bhargavi_javvadi_/"><i class="fab fa-instagram"></i></a>
+            </div>
+           
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
